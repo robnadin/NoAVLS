@@ -4,7 +4,7 @@ AVLS will still be checked in settings however it will not limit volume.
 Volume may be set to 21 at boot, however AVLS should be disabled.                  
                     
 # Credits          
-noAVLS by [SilicaServer](https://discord.gg/j4eGHhF)               
+NoAVLS by [SilicaServer](https://discord.gg/j4eGHhF)               
 LISTEN TO THE SOUND OF FREEDOM                 
      
 @SilicaAndPina - Project Manager                               
