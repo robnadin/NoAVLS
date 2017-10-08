@@ -2,6 +2,7 @@
 NoAVLS is a plugin that will permanantly disable AVLS on AVLS-Forced vitas
 
 AVLS will still be checked in settings however it will not limit volume.
+Volume may be set to 21 at boot, however AVLS should be disabled.
 
 # Installation
 Place noavls.skprx into ux0:tai (or ur0:tai)
