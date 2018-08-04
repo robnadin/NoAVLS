@@ -14,3 +14,5 @@ LISTEN TO THE SOUND OF FREEDOM
 Place noavls.skprx into ux0:tai (or ur0:tai)                        
 then edit config.txt and add "ux0:tai/noavls.skprx" (or ur0:tai/noavls.skprx depending on what your using)                     
 under the *KERNEL entry       
+
+Download: https://bitbucket.org/SilicaAndPina/noavls/downloads/noavls.skprx  
