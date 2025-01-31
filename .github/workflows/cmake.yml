@@ -1,0 +1,23 @@
+name: Build via CMake
+
+on: workflow_dispatch
+
+env:
+  VITASDK: ${{github.workspace}}/vitasdk
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install dependencies
+      run: sudo apt-get install make git-core cmake python-is-python3
+    - name: Checkout Vitadev Package manager
+      run: git clone https://github.com/vitasdk/vdpm
+    - name: Bootstrap vdpm
+      run: cd vdpm && ./bootstrap-vitasdk.sh && ./install-all.sh
+    - name: Configure CMake
+      run: cmake -S ${{github.workspace}}/src -B ${{github.workspace}}/build
+    - name: Make
+      run: cd ${{github.workspace}}/build; make
